@@ -1,0 +1,19 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+// Variables
+@import "variables";
+@import "bootstrap";
+
+// Bootstrap
+//@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "login";
+@import "main";
+@import "header";
+@import "sidebar";
+@import "sites";
+@import "table";
+@import "flatpickr";
+@import "dashboard";

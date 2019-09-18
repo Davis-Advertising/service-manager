@@ -1,0 +1,31 @@
+.page-login {
+
+  h1 {
+    text-align: center;
+  }
+  .logo {
+    display: block;
+    margin: 20% auto 0;
+    max-width: 260px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 236px;
+    }
+    p {
+      text-align: center;
+      font-size: 16px;
+      color: #656565;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+  .panel-body {
+    padding: 10px 40px;
+  }
+  .container .row {
+    flex-direction: column;
+  }
+
+}

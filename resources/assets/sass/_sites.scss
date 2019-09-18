@@ -1,0 +1,103 @@
+.domain {
+  background-color: white;
+  border: solid 1px #EFEFEF;
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 12px 18px 12px;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 0;
+  }
+  > .row:first-child {
+    background-color: #EFEFEF;
+    border-bottom: solid 1px #EFEFEF;
+  }
+  .col-3 {
+    border-right: solid 1px #EFEFEF;
+  }
+}
+.status {
+  border-radius: 40px;
+  display: block;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 14px;
+  bottom: 0;
+}
+.status-expired {
+  background-color: red;
+}
+.status-expiring-soon {
+  background-color: orange;
+}
+.status-ok {
+  background-color: green;
+}
+.domain__status {
+  padding: 10px 0;
+
+  p {
+    font-size: 15px;
+    margin: 0;
+  }
+  .dropdown {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 8px;
+    height: 36px;
+    margin: auto;
+
+    > .btn:after{
+      content: "";
+      -webkit-mask: url(/svg/edit-regular.svg) no-repeat 50% 50%;
+      mask: url(/svg/edit-regular.svg) no-repeat 50% 50%;
+      display: block;
+      background-color: #EFEFEF;
+      width: 22px;
+      height: 22px;
+    }
+    .dropdown-menu {
+      padding: 14px;
+      width: 300px;
+
+      form {
+        display: block;
+      }
+      label {
+      }
+      .datepicker {
+        margin-bottom: 16px;
+      }
+      .btn.btn-primary {
+        display: block;
+        margin: 16px 0 0 auto;
+      }
+
+    }
+
+    .btn {
+      border: none;
+
+      &:hover {
+        border: solid 1px #6c757d;
+      }
+    }
+    .btn:hover:after,
+    .btn.btn-secondary[aria-expanded="true"]:after {
+      background-color: black;
+    }
+    .btn.btn-secondary {
+      background-color: transparent;
+    }
+
+  }
+}
